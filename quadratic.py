@@ -135,9 +135,9 @@ def redrawWin():
     aSlider.draw(), aSlider.interact()
     bSlider.draw(), bSlider.interact()
     cSlider.draw(), cSlider.interact()
-    a = 0.25+(aSlider.handleX-aSlider.handleXdef)/50
-    b = -2+(bSlider.handleX-bSlider.handleXdef)/50
-    c = -2+(cSlider.handleX-cSlider.handleXdef)/50
+    a = 0.2+(aSlider.handleX-aSlider.handleXdef)/25
+    b = -4+(bSlider.handleX-bSlider.handleXdef)/25
+    c = -4+(cSlider.handleX-cSlider.handleXdef)/25
     textOnScreen(xy-200, 50, "Quadratic function: ", str(a)[:4]+"(x + " + str(b)[:4] + ")2 + " + str(c)[:4], 20)
     textOnScreen(aSlider.slideX+aSlider.slideRect.width/2, xy-50, "a value is: ", str(a)[:4], 20)
     textOnScreen(bSlider.slideX+bSlider.slideRect.width/2, xy-50, "b value is: ", str(b)[:4], 20)
